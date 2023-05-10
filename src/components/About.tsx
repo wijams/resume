@@ -14,9 +14,14 @@ const InfoDiv = styled.div`
     flex-direction: row;
 `
 
+const ImageDiv = styled.div`
+    height: 20rem;
+    overflow: hidden;
+`
+
 const OwnerImage = styled.img`
     margin-left: 25rem;
-    height: 20rem;
+    height: 24rem;
 `
 
 const OwnerText = styled.p`
@@ -30,7 +35,9 @@ function About() {
             <Header/>
             <OwnerHeader>About Wesley Ijams</OwnerHeader>
             <InfoDiv>
-                <OwnerImage src={picture} alt="The website owner"/>
+                <ImageDiv>
+                    <OwnerImage src={picture} alt="The website owner"/>
+                </ImageDiv>
                 <OwnerText>I'm a recently graduated developer from Vancouver, Washington trying to start a career in software engineering.
                     I have 1 year of experience in web development and 2 years of experience in IT support.
                     I'm passionate about creating a positive user experience and designing interfaces that accomodate various demographics and disabilities.
