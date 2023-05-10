@@ -9,6 +9,8 @@ const Div = styled.div`
     justify-content: center;
     height: 2rem;
     padding: 2rem;
+    position: fixed;
+    width: 100%;
 `
 
 const StyledLink = styled(Link)`
