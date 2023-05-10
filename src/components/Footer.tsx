@@ -7,6 +7,10 @@ const Div = styled.div`
     min-height: 2rem;
     padding: 2rem;
     margin-top: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
 `
 
 const Hyperlink = styled.a`

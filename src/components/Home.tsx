@@ -36,7 +36,7 @@ const LinkDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
 `
 
 const IconDiv = styled.div`
@@ -89,7 +89,7 @@ function Home() {
         <>
             <Header/>
             <Banner>
-                <BannerImage src={picture} alt="The website owner"/>
+                <BannerImage src={picture} alt="A forest in mist"/>
             </Banner>
             <TextDiv>
                 <HomeHeader>Wesley Ijams Portfolio</HomeHeader>
