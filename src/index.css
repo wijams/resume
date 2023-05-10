@@ -1,5 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
+    padding: 9;
     min-width: 320px;
     min-height: 100vh;
+    background-color: #FFFAFA;
   }
