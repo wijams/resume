@@ -18,6 +18,9 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     margin-left: 2rem;
     cursor: pointer;
+    &:hover {
+        opacity: 0.5;
+    }
 `
 
 const BigLink = styled(StyledLink)`

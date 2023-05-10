@@ -8,6 +8,8 @@ import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faCheckToSlot } from '@fortawesome/free-solid-svg-icons'
 
+import { useNavigate } from 'react-router-dom';
+
 const Banner = styled.div`
     overflow: hidden;
     height: 27rem;
@@ -60,6 +62,29 @@ const IconText = styled.p`
 `
 
 function Home() {
+
+    let navigate = useNavigate();
+
+    let toAbout = () => {
+        let path = `/about`;
+        navigate(path);
+    }
+
+    let toResume = () => {
+        let path = '/resume';
+        navigate(path);
+    }
+
+    let toCoverLetter = () => {
+        let path = '/cover-letter';
+        navigate(path);
+    }
+
+    let toRecommendation = () => {
+        let path = '/letter-of-recommendation';
+        navigate(path);
+    }
+
     return (
         <>
             <Header/>
@@ -70,19 +95,19 @@ function Home() {
                 <HomeHeader>Wesley Ijams Portfolio</HomeHeader>
             </TextDiv>
             <LinkDiv>
-                <IconDiv>
+                <IconDiv onClick={toAbout}>
                     <Icon icon={faUser}/>
                     <IconText>About</IconText>
                 </IconDiv>
-                <IconDiv>
+                <IconDiv onClick={toResume}>
                     <Icon icon={faBriefcase}/>
                     <IconText>Resume</IconText>
                 </IconDiv>
-                <IconDiv>
+                <IconDiv onClick={toCoverLetter}>
                     <Icon icon={faEnvelope}/>
                     <IconText>Cover Letter</IconText>
                 </IconDiv>
-                <IconDiv>
+                <IconDiv onClick={toRecommendation}>
                     <Icon icon={faCheckToSlot}/>
                     <IconText>Letter of Recommendation</IconText>
                 </IconDiv>
