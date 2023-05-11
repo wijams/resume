@@ -46,6 +46,43 @@ const WrapList = styled.ul`
     margin-top: .5rem;
 `
 
+const WorkDiv = styled.div`
+    background-color: #efecea;
+    border-radius: 15px;
+    width: 83rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+`
+
+const JobDiv = styled.div`
+    margin-left: 2rem;
+    margin-top: 1rem;
+`
+
+const TopRow = styled.div`
+    width: 60rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5rem;
+`
+
+const Employer = styled.p`
+    font-weight: bold;
+`
+
+const JobTitle = styled.p`
+    font-style: italic;
+`
+
+const AccomplishList = styled.ul`
+    margin-left: 2rem;
+`
+
+const Accomplishment = styled.li`
+    margin-top: 1rem;
+`
+
 function Resume() {
     return (
         <>
@@ -84,6 +121,26 @@ function Resume() {
                         <li>GitHub</li>
                     </WrapList>
                 </SkillsDiv>
+            </RowDiv>
+            <RowDiv>
+                <WorkDiv>
+                    <SmallHeader>Experience</SmallHeader>
+                    <JobDiv>
+                        <TopRow>
+                            <Employer>Brigham Young University Center for Teaching and Learning</Employer>
+                            <p>May 2022 - May 2023</p>
+                        </TopRow>
+                        <TopRow>
+                            <JobTitle>Web Developer</JobTitle>
+                            <p>Provo, Utah</p>
+                        </TopRow>
+                        <AccomplishList>
+                            <Accomplishment>Developed a user-friendly web interface for a multilevel file system</Accomplishment>
+                            <Accomplishment>Implemented a group management page from the specification stage to bug testing</Accomplishment>
+                            <Accomplishment>Wrote blueprints and unit tests to improve reliability and maintainability</Accomplishment>
+                        </AccomplishList>
+                    </JobDiv>
+                </WorkDiv>
             </RowDiv>
             <Footer/>
         </>
