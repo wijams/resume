@@ -33,7 +33,7 @@ function About() {
     return (
         <>
             <Header/>
-            <OwnerHeader>About Wesley Ijams</OwnerHeader>
+            <OwnerHeader>About Me</OwnerHeader>
             <InfoDiv>
                 <ImageDiv>
                     <OwnerImage src={picture} alt="The website owner"/>
